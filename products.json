@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Handcrafted Peacock Standing",
+    "description": "A beautiful stand.",
+    "price": 25.99,
+    "stock": 10,
+    "image": "peacock.jpg"
+  },
+  {
+    "name": "Meenakari Marble Pen Stand Vertical",
+    "description": "A traditional Stand.",
+    "price": 15.49,
+    "stock": 20,
+    "image": "pen stand.jpg"
+  }
+]
