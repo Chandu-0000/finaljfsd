@@ -1,3 +1,4 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -45,11 +46,12 @@ nav a {
     background-color: #5a3010;
 }
 
+/* Main content styling */
 main {
     flex: 1; /* Push footer to the bottom of the viewport */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center grid horizontally */
+    align-items: center;
     padding: 20px 0;
 }
 
@@ -58,11 +60,11 @@ main {
     text-align: center;
 }
 
-.product-grid {
+#product-grid {
     width: 80%; /* Restrict grid width for a medium layout */
     max-width: 1200px; /* Add a cap for wider screens */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
     gap: 20px;
     padding: 20px;
     background-color: #fff;
@@ -80,19 +82,19 @@ main {
 
 .product-item img {
     width: 100%;
-    max-height: 150px; /* Reduce image height */
+    max-height: 150px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .product-item h3 {
     color: #8b4513;
-    font-size: 1.1rem; /* Reduce font size */
+    font-size: 1.1rem;
     margin: 10px 0;
 }
 
 .product-item .description {
-    font-size: 0.9rem; /* Smaller description text */
+    font-size: 0.9rem;
     color: #333;
 }
 
@@ -107,12 +109,25 @@ main {
     color: gray;
 }
 
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #product-grid {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
+
 footer {
     background-color: #8b4513;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: relative; /* Allows the footer to stay at the bottom */
+    position: relative;
     bottom: 0;
 }
