@@ -78,13 +78,11 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
     
-    <input type="submit" value="Login">
+<input type="button" value="Login" onclick="window.location.href='culturalConsultant.html';">
     
-    <p>If you don't have an account, <a href="signup.jsp">Sign Up</a></p>
+    <p>If you don't have an account, <a href="signup.html">Sign Up</a></p>
     
-    <c:if test="${not empty error}">
-        <div style="color: red;">${error}</div> <!-- Displaying error message -->
-    </c:if>
+    
 </form>
       
         
