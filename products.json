@@ -12,5 +12,12 @@
     "price": 15.49,
     "stock": 20,
     "image": "pen stand.jpg"
+  },
+    {
+    "name": "Handcrafted Keychain Guitar",
+    "description": "A traditional Guitar.",
+    "price": 15.49,
+    "stock": 20,
+    "image": "guitar.jpg"
   }
 ]
