@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
 
-//@WebServlet("/manageProducts")
+@WebServlet("/manageProducts")
 public class ManageProductsServlett extends HttpServlet {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/handicraft";
     private static final String DB_USER = "root";
